@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toolingInfo</title>
+</head>
+<body>
+  <form method="post" action="/v9_post/">
+	姓名：<input type="text" id="" name="name"/>
+    <input type="submit" />
+  </form>
+
+
+    <hr/>
+
+
+{% for t in ta %}
+{{ t.id }} <br/>
+    {{t.info}}<hr/>
+
+{% endfor%}
+</body>
+</html>
